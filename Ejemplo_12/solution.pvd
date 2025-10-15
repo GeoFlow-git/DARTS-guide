@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1" byte_order="LittleEndian">
+<Collection>
+<DataSet timestep="0.0" group="" part="0" file="vtk_output1\solution_ts0.vts" name=""/>
+<DataSet timestep="10950.0" group="" part="0" file="vtk_output1\solution_ts1.vts" name=""/>
+<DataSet timestep="0.0" group="" part="0" file="vtk_output2\solution_ts0.vts" name=""/>
+<DataSet timestep="10950.0" group="" part="0" file="vtk_output2\solution_ts1.vts" name=""/>
+<DataSet timestep="0.0" group="" part="0" file="vtk_output3\solution_ts0.vts" name=""/>
+<DataSet timestep="10950.0" group="" part="0" file="vtk_output3\solution_ts1.vts" name=""/>
+</Collection>
+</VTKFile>
