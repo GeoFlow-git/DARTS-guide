@@ -1,6 +1,6 @@
-Info    : Running 'C:\Users\luis_\Codigo\Darts_new\Darts_enviro_new\Scripts\gmsh.bat\..\gmsh meshes\output_raw_lc_50.geo -o meshes\output_raw_lc_50.msh -save' [Gmsh 4.13.0, 1 node, max. 1 thread]
-Info    : Started on Thu Oct 09 06:46:12 2025
-Info    : Reading 'meshes\output_raw_lc_50.geo'...
+Info    : Running 'C:\Users\luis_\Codigo\Darts_new\Darts_enviro_new\Scripts\gmsh.bat\..\gmsh meshes\output_raw_lc_25.geo -o meshes\output_raw_lc_25.msh -save' [Gmsh 4.13.0, 1 node, max. 1 thread]
+Info    : Started on Thu Oct 16 22:59:55 2025
+Info    : Reading 'meshes\output_raw_lc_25.geo'...
 Info    : Meshing 1D...
 Info    : [  0%] Meshing curve 1 (Line)
 Info    : [ 10%] Meshing curve 2 (Line)
@@ -494,7 +494,7 @@ Info    : [100%] Meshing curve 90471 (Extruded)
 Info    : [100%] Meshing curve 90473 (Extruded)
 Info    : [100%] Meshing curve 90474 (Extruded)
 Info    : [100%] Meshing curve 90475 (Extruded)
-Info    : Done meshing 1D (Wall 0.011169s, CPU 0s)
+Info    : Done meshing 1D (Wall 0.0160162s, CPU 0s)
 Info    : Meshing 2D...
 Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
 Info    : [ 10%] Meshing surface 133 (Extruded)
@@ -622,18 +622,18 @@ Info    : [100%] Meshing surface 90464 (Extruded)
 Info    : [100%] Meshing surface 90468 (Extruded)
 Info    : [100%] Meshing surface 90472 (Extruded)
 Info    : [100%] Meshing surface 90476 (Extruded)
-Info    : Done meshing 2D (Wall 0.320178s, CPU 0.265625s)
+Info    : Done meshing 2D (Wall 1.06925s, CPU 0.9375s)
 Info    : Meshing 3D...
 Info    : Meshing volume 1 (Extruded)
-Info    : Done meshing 3D (Wall 0.18091s, CPU 0.140625s)
+Info    : Done meshing 3D (Wall 0.663911s, CPU 0.59375s)
 Info    : Optimizing mesh...
-Info    : Done optimizing mesh (Wall 0.00084281s, CPU 0s)
-Info    : 17433 nodes 52665 elements
+Info    : Done optimizing mesh (Wall 0.00178003s, CPU 0s)
+Info    : 47547 nodes 143007 elements
 Info    : Removing duplicate mesh nodes...
-Info    : Found 1613 duplicate nodes 
-Info    : Removed 1613 duplicate mesh nodes
+Info    : Found 3057 duplicate nodes 
+Info    : Removed 3057 duplicate mesh nodes
 Info    : Done removing duplicate mesh nodes
-Info    : Done reading 'meshes\output_raw_lc_50.geo'
-Info    : Writing 'meshes\output_raw_lc_50.msh'...
-Info    : Done writing 'meshes\output_raw_lc_50.msh'
-Info    : Stopped on Thu Oct 09 06:46:13 2025 (From start: Wall 0.846036s, CPU 0.640625s)
+Info    : Done reading 'meshes\output_raw_lc_25.geo'
+Info    : Writing 'meshes\output_raw_lc_25.msh'...
+Info    : Done writing 'meshes\output_raw_lc_25.msh'
+Info    : Stopped on Thu Oct 16 22:59:57 2025 (From start: Wall 2.33647s, CPU 2.01562s)

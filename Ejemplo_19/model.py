@@ -54,8 +54,8 @@ class Model(DartsModel):
         
         
 
-        fname = f"output_raw_lc_{self.input_data['char_len']}.msh"
-        #fname = f"output_mergefac_{self.input_data['merge_threshold']}_clean_lc_{self.input_data['char_len']}.msh"
+        #fname = f"output_raw_lc_{self.input_data['char_len']}.msh"
+        fname = f"output_mergefac_{self.input_data['merge_threshold']}_clean_lc_{self.input_data['char_len']}.msh"
 
         mesh_file = os.path.join('meshes', fname)
         print(mesh_file)

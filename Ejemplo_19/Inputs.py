@@ -13,8 +13,8 @@ def input_data_default():
     # # DFN framework parameters (for mesh generation)
 
     input_data['frac_file'] = 'frac.txt'  # fracture tips coordinates X1 Y1 X2 Z2; should contain at least 2 rows (2 fractures)
-    input_data['char_len']=200
-    input_data['char_len']=50
+    #input_data['char_len']=200
+    input_data['char_len']=25
     input_data['merge_threshold']=.86    # [0.5  --  0.86],   #  200*.5= 100
     input_data['box_data']=[
     [input_data['x1'], input_data['y1']],  # bottom left

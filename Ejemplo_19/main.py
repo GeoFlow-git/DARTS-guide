@@ -116,23 +116,24 @@ def generate_mesh(input_data):
                        straighten_after_cln=True,
                        angle_tol_straighten=20,     # fracturas con angulo menor, se enderezan
 
-                       #small_angle_iter=1,
+                       small_angle_iter=4,
                        # angle_tol_small_intersect=23, # fracturas con angulo menor, se unen en una sola fractura
                        angle_tol_small_intersect=35, # fracturas con angulo menor, se unen en una sola fractura
 
 
+                        merge_threshold=input_data['merge_threshold'],  
+                        
+                        main_algo_iters=4,
+                                              
+
+                        # char_len_well=100,
+                        
                         # Seleccionar como 'True' solo una de las siguientes opciones:
                         # calc_intersections_before=True,   # defualt: False
                         # calc_intersections_after=False,     # defualt: True
 
                         #partition_fractures_in_segms=False,
-                        merge_threshold=input_data['merge_threshold'],  
 
-                        # char_len_well=100,
-
-                        small_angle_iter=4,
-                        main_algo_iters=4,
-                                              
 
                       )
 

@@ -16,54 +16,65 @@ overburden_2_layers = 0;
 underburden_2_thickness = 0.000;
 underburden_2_layers = 0;
 Point(5) = {1500.00000, 2800.00000,  0.00000, lc};
-Point(11) = {2500.00000, 2900.00000,  0.00000, lc};
-Line(1) = {5, 11};
+Point(10) = {1900.00000, 2840.00000,  0.00000, lc};
+Line(1) = {5, 10};
+
+Point(15) = {2500.00000, 2900.00000,  0.00000, lc};
+Line(2) = {10, 15};
 
 Point(6) = {1500.00000, 3000.00000,  0.00000, lc};
-Point(12) = {2500.00000, 3000.00000,  0.00000, lc};
-Line(2) = {6, 12};
+Point(8) = {1700.00000, 3000.00000,  0.00000, lc};
+Line(3) = {6, 8};
 
-Point(7) = {2000.00000, 1000.00000,  0.00000, lc};
-Point(10) = {2500.00000, 1300.00000,  0.00000, lc};
-Line(3) = {7, 10};
+Line(4) = {8, 10};
+
+Point(11) = {2000.00000, 1000.00000,  0.00000, lc};
+Point(14) = {2500.00000, 1300.00000,  0.00000, lc};
+Line(5) = {11, 14};
 
 Point(3) = {1500.00000, 1800.00000,  0.00000, lc};
-Point(8) = {2000.00000, 2000.00000,  0.00000, lc};
-Line(4) = {3, 8};
+Point(9) = {1833.33333, 1933.33333,  0.00000, lc};
+Line(6) = {3, 9};
+
+Point(12) = {2000.00000, 2000.00000,  0.00000, lc};
+Line(7) = {9, 12};
 
 Point(4) = {1500.00000, 2200.00000,  0.00000, lc};
-Line(5) = {4, 8};
+Point(7) = {1666.66667, 2133.33333,  0.00000, lc};
+Line(8) = {4, 7};
 
-Point(13) = {2666.66667, 1966.66667,  0.00000, lc};
-Point(14) = {3000.00000, 2100.00000,  0.00000, lc};
-Line(6) = {13, 14};
+Line(9) = {7, 9};
 
-Point(2) = {1500.00000, 1000.00000,  0.00000, lc};
-Line(7) = {2, 7};
+Point(16) = {2833.33333, 1933.33333,  0.00000, lc};
+Line(10) = {12, 16};
+
+Point(17) = {3000.00000, 2100.00000,  0.00000, lc};
+Line(11) = {16, 17};
 
 Point(1) = {1500.00000, 500.00000,  0.00000, lc};
-Point(9) = {2500.00000, 600.00000,  0.00000, lc};
-Line(8) = {1, 9};
+Point(13) = {2333.33333, 566.66667,  0.00000, lc};
+Line(12) = {1, 13};
 
-Line(9) = {8, 13};
+Point(2) = {1500.00000, 1000.00000,  0.00000, lc};
+Line(13) = {2, 11};
 
 num_points_frac = newp - 1;
 num_lines_frac = newl - 1;
 
 // Extra points for boundary of domain:
-Point(15) = { 0.00000,  0.00000,  0.00000, lc_box};
-Point(16) = {4000.00000,  0.00000,  0.00000, lc_box};
-Point(17) = {4000.00000, 4000.00000,  0.00000, lc_box};
-Point(18) = { 0.00000, 4000.00000,  0.00000, lc_box};
+Point(18) = { 0.00000,  0.00000,  0.00000, lc_box};
+Point(19) = {4000.00000,  0.00000,  0.00000, lc_box};
+Point(20) = {4000.00000, 4000.00000,  0.00000, lc_box};
+Point(21) = { 0.00000, 4000.00000,  0.00000, lc_box};
 
 // Extra lines for boundary of domain:
-Line(10) = {15, 16};
-Line(11) = {16, 17};
-Line(12) = {17, 18};
-Line(13) = {18, 15};
+Line(14) = {18, 19};
+Line(15) = {19, 20};
+Line(16) = {20, 21};
+Line(17) = {21, 18};
 
 // Create line loop for boundary surface:
-Curve Loop(1) = {10, 11, 12, 13};
+Curve Loop(1) = {14, 15, 16, 17};
 Plane Surface(1) = {1};
 
 Curve{1:num_lines_frac} In Surface{1};
@@ -126,6 +137,26 @@ Physical Surface(90007) = {news - 1};
 // Reservoir layers
 fr[] = Extrude {0, 0, height_res}{ Line {9}; Layers{rsv_layers}; Recombine;};
 Physical Surface(90008) = {news - 1};
+
+// Fracture {10}
+// Reservoir layers
+fr[] = Extrude {0, 0, height_res}{ Line {10}; Layers{rsv_layers}; Recombine;};
+Physical Surface(90009) = {news - 1};
+
+// Fracture {11}
+// Reservoir layers
+fr[] = Extrude {0, 0, height_res}{ Line {11}; Layers{rsv_layers}; Recombine;};
+Physical Surface(90010) = {news - 1};
+
+// Fracture {12}
+// Reservoir layers
+fr[] = Extrude {0, 0, height_res}{ Line {12}; Layers{rsv_layers}; Recombine;};
+Physical Surface(90011) = {news - 1};
+
+// Fracture {13}
+// Reservoir layers
+fr[] = Extrude {0, 0, height_res}{ Line {13}; Layers{rsv_layers}; Recombine;};
+Physical Surface(90012) = {news - 1};
 
 num_surfaces_before = news;
 num_surfaces_after = news - 1;

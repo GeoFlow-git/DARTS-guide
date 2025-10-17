@@ -1,9 +1,9 @@
 // Geo file which meshes the input mesh from act_frac_sys.
 // Change mesh-elements size by varying "lc" below.
 
-lc = 50.000;
-lc_box = 50.000;
-lc_well = 50.000;
+lc = 25.000;
+lc_box = 25.000;
+lc_well = 25.000;
 height_res = 50.000;
 
 rsv_layers = 1;
